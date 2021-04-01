@@ -1,0 +1,25 @@
+{
+  "name": "burger-log",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eluna1997/burger-log.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eluna1997/burger-log/issues"
+  },
+  "homepage": "https://github.com/eluna1997/burger-log#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0",
+    "mysql": "^2.18.1"
+  }
+}
