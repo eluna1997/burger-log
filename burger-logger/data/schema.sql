@@ -7,9 +7,9 @@ CREATE DATABASE ;
 USE ;
 
 CREATE TABLE burgers (
-    id int NOT NULL AUTO_INCREMENT ,
-    burger_name varchar(30) NOT NULL,
+    Id int AUTO_INCREMENT NOT NULL  ,
+    burger_name varchar(225) NOT NULL,
     eaten BOOLEAN DEFAULT false,
-    primary key (id)
+    primary key (Id)
 );
 
