@@ -25,7 +25,7 @@ $(function() {
             name: $("#burg").val().trim(),
           };
        
-          $.ajax("/api/burger", {
+          $.ajax("/api/burgers", {
             type: "POST",
             data: newBurg
           }).then(

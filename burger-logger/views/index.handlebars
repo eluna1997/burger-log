@@ -1,0 +1,48 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-xl-12 col-md-6 col-xs-6">
+    <br>
+    <p> </p>
+    <br>
+    </div>
+  </div>
+
+  <h1 class="text-center">Eat Some Burgers!!</h1>
+  <div class="row">
+    <section class="col-xl-6 col-sm-6 col-xs-6; card" style="float: left; background-color: rgb(92, 90, 13); border-style: solid; border-color: red; border-radius: 25px; padding-bottom: 25px;">
+  <h2>Burgers for you to Consume!</h2>
+    <ul class="list-group list-group-flush">
+      {{#each burgers}}
+        {{#unless ate}}
+        {{> burgers/burgers-block eaten=false}}
+      {{/unless}}
+      {{/each}}   
+    </ul>
+    </section>
+
+  <section class="col-xl-6 col-sm-6 col-xs-6; card" style="float: left; background-color: rgb(92, 90, 13); border-style: solid; border-color: red; border-radius: 25px; padding-bottom: 25px;">
+    <h3 class="text-center">Burgers That You Have Consumed</h3>
+    <ul class="list-group list-group-flush">
+      {{#each burgers}}
+        {{#if ate}}
+        {{> burgers/burgers-block ate=true}}
+      {{/if}}
+      {{/each}}
+    </ul>
+    </section>
+    </div>
+   
+    <section class="col-xl-12 col-sm-12 col-xs-12; card" style="background-color: rgb(92, 90, 13); border-style: solid; border-color: red; border-radius: 25px; padding-bottom: 25px;">
+    <h3 class="text-center">Enter a Burger You Want, Then Click "Add Button"</h3>
+      <form class="create-form">
+
+    <div class="form-group">
+      <label for="burg">Burger:</label>
+      <input type="text" id="burg" name="name" placeholder="What Kind Of Burger Would You Like?">
+        </div>
+
+        <button type="submit">Add Your Burger.</button>
+</form>
+</section>
+</div>
